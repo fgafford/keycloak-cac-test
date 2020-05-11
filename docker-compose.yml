@@ -1,0 +1,20 @@
+version: '2.4'
+
+services:
+  keycloak:
+    image: jboss/keycloak:latest
+    ports:
+      - 8080:8080
+      - 8443:8443
+    environment:
+      - KEYCLOAK_LOGLEVEL=INFO
+      - DB_VENDOR=H2
+      - KEYCLOAK_USER=admin
+      - KEYCLOAK_PASSWORD=admin
+      - want-client-auth=true
+      - X509_CA_BUNDLE=/etc/x509/https/tls.crt /etc/x509/https/tls.key
+
+      - KEYCLOAK_IMPORT=/conf/import/cac-test-realm-realm.json
+    volumes:
+      - ./certs:/etc/x509/https
+      - ./realms:/conf/import
