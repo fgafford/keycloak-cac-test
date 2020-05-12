@@ -16,5 +16,6 @@ cfssl sign -ca ca.pem -ca-key ca-key.pem -hostname localhost,127.0.0.1,::1 tls.c
 # Move things where they need to be
 mv ./tls.key ../certs/
 mv ./tls.crt ../certs/
+mv ./ca.pem ../certs/ca.crt
 
 # Cleanup

@@ -1,7 +1,8 @@
 {
     "hosts": [
         "localhost",
-        "127.0.0.1"
+        "127.0.0.1",
+        "::1"
     ],
     "key": {
         "algo": "rsa",
@@ -10,9 +11,9 @@
     "names": [
         {
             "C":  "US",
-            "L":  "My Computer",
-            "O":  "My Stuffs, Inc.",
-            "OU": "WWW",
+            "L":  "Bloomington",
+            "O":  "Local Server",
+            "OU": "Local Server, Inc.",
             "ST": "Bloomington"
         }
     ]

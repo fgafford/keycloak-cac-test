@@ -7,10 +7,10 @@
   "names": [
     {
       "C": "US",
-      "L": "My Comupter",
-      "O": "My Computer",
-      "OU": "My Stuff, Inc.",
-      "ST": "Bloomington"
+      "L": "Bloomington",
+      "O": "Local CA Authority",
+      "OU": "Local CA Authority, Inc.",
+      "ST": "Indiana"
     }
  ]
 }
